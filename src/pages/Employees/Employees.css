@@ -1,0 +1,257 @@
+.employees-layout {
+display: flex;
+min-height: 100vh;
+background: #f4f6fb;
+color: #1e293b;
+}
+
+.employees-sidebar {
+width: 240px;
+flex-shrink: 0;
+background: #172554;
+color: white;
+padding: 28px 18px;
+display: flex;
+flex-direction: column;
+}
+
+.employees-brand {
+font-size: 22px;
+margin-bottom: 40px;
+}
+
+.employees-nav {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.employees-nav-link {
+width: 100%;
+padding: 13px 14px;
+border: none;
+border-radius: 8px;
+background: transparent;
+color: #cbd5e1;
+text-align: left;
+cursor: pointer;
+font-size: 15px;
+}
+
+.employees-nav-link:hover,
+.employees-nav-link.active {
+background: #2563eb;
+color: white;
+}
+
+.employees-logout {
+margin-top: auto;
+padding: 12px;
+background: #334155;
+color: white;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+}
+
+.employees-main {
+flex: 1;
+min-width: 0;
+padding: 32px;
+}
+
+.employees-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 30px;
+}
+
+.employees-header h1 {
+margin-bottom: 8px;
+}
+
+.employees-header p {
+color: #64748b;
+}
+
+.add-employee-button {
+padding: 12px 18px;
+background: #2563eb;
+color: white;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+}
+
+.add-employee-button:hover {
+background: #1d4ed8;
+}
+
+.employees-card {
+background: white;
+padding: 25px;
+border-radius: 12px;
+box-shadow: 0 3px 12px rgba(15, 23, 42, 0.04);
+}
+
+.employees-toolbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+margin-bottom: 25px;
+}
+
+.employees-toolbar h2 {
+margin-bottom: 6px;
+}
+
+.employees-toolbar p {
+color: #64748b;
+font-size: 14px;
+}
+
+.employee-search {
+width: 280px;
+padding: 11px 14px;
+border: 1px solid #cbd5e1;
+border-radius: 7px;
+}
+
+.employee-search:focus {
+outline: none;
+border-color: #2563eb;
+}
+
+.employees-table-wrapper {
+overflow-x: auto;
+}
+
+.employees-table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.employees-table th,
+.employees-table td {
+padding: 15px 12px;
+border-bottom: 1px solid #e2e8f0;
+text-align: left;
+white-space: nowrap;
+}
+
+.employees-table th {
+background: #f8fafc;
+color: #64748b;
+font-size: 13px;
+}
+
+.employees-table td {
+font-size: 14px;
+}
+
+.employee-name {
+font-weight: 600;
+}
+
+.employee-status {
+display: inline-block;
+padding: 6px 10px;
+border-radius: 20px;
+font-size: 12px;
+font-weight: 600;
+}
+
+.employee-status.active {
+color: #15803d;
+background: #dcfce7;
+}
+
+.employee-status.on-leave {
+color: #a16207;
+background: #fef3c7;
+}
+
+.employee-status.inactive {
+color: #b91c1c;
+background: #fee2e2;
+}
+
+.action-button,
+.delete-button {
+padding: 7px 10px;
+margin-right: 5px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 12px;
+}
+
+.action-button {
+background: #e0e7ff;
+color: #3730a3;
+}
+
+.delete-button {
+background: #fee2e2;
+color: #b91c1c;
+}
+
+.no-employees {
+padding: 30px;
+text-align: center;
+color: #64748b;
+}
+
+@media (max-width: 900px) {
+.employees-sidebar {
+width: 180px;
+}
+
+
+.employees-main {
+    padding: 20px;
+}
+
+.employees-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.employee-search {
+    width: 100%;
+}
+.employee-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.employee-modal {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.employee-modal h2 {
+    margin-bottom: 20px;
+}
+
+.employee-modal p {
+    margin: 12px 0;
+    color: #334155;
+}
+
+.employee-modal .action-button {
+    margin-top: 15px;
+}
+
+}

@@ -1,0 +1,99 @@
+.add-employee-page {
+    min-height: 100vh;
+    background: #f4f6fb;
+    padding: 40px;
+}
+
+.add-employee-card {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.05);
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.form-header h1 {
+    margin-bottom: 8px;
+}
+
+.form-header p {
+    color: #64748b;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.save-button,
+.cancel-button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.save-button {
+    background: #2563eb;
+    color: white;
+}
+
+.save-button:hover {
+    background: #1d4ed8;
+}
+
+.cancel-button {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+@media (max-width: 700px) {
+
+    .add-employee-page {
+        padding: 20px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
